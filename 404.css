@@ -1,0 +1,45 @@
+::-webkit-scrollbar {display: none;}
+
+body {
+    background-color: black;
+    color: white;
+    margin: 0px;
+    padding: 0px;
+    font-family: "Ubuntu";
+    text-align: center;
+}
+
+.center-wrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#notfound {
+    display: block;
+    font-size: min(10vw, 3em);
+    white-space: nowrap;
+    font-weight: 900;
+}
+span:not(#notfound) {
+    display: block;
+    font-size: min(4vw, 1.2em);
+    white-space: nowrap;
+}
+
+#home {
+    display: inline-block;
+    margin-top: 10px;
+    text-decoration: none;
+    background-color: white;
+    color: black;
+    font-size: min(5vw, 1.5em);
+    padding: 5px 10px;
+    border-radius: 10px;
+    transform: scale(1);
+    transition: transform 0.4s;
+}
+#home:hover {
+    transform: scale(1.1);
+}

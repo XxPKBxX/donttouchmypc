@@ -1,0 +1,48 @@
+.footer {
+    position: absolute;
+    width: 100%;
+    min-height: 99px;
+    background-color: rgb(242, 242, 242);
+    color: rgba(0,0,0,.54);
+    bottom: 0px;
+}
+.footer #country {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: calc(99px / 2);
+    border-bottom: 1px solid rgb(218, 220, 224);
+}
+.footer #country span {
+    position: absolute;
+    display: block;
+    top: 50%;
+    left: 30px;
+    transform: translateY(-50%);
+}
+
+.footer #links {
+    text-align: center;
+}
+.footer #links div {
+    display: inline-block;
+    max-width: 100%;
+    padding: 0px 23px;
+    white-space: nowrap;
+}
+.footer #links a {
+    display: inline-block;
+    padding: 15px;
+    font-size: 14px;
+    color: rgb(112, 117, 122);
+}
+
+@media screen and (min-width: 1200px) {
+    .footer #links {
+        text-align: left;
+    }
+    .footer #links #lowrow {
+        position: absolute;
+        right: 0px;
+    }
+}

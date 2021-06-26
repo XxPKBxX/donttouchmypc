@@ -1,0 +1,116 @@
+.logdialog {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(5px);
+    z-index: 100;
+    font-family: "Ubuntu";
+    transition: opacity 0.4s;
+    user-select: text;
+}
+.logdialog.hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+.logpopup {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    width: min(calc(100% - 40px), 500px);
+    height: min(calc(100% - 40px), 900px);
+    background-color: black;
+    color: white;
+    border-radius: 20px;
+    text-align: center;
+    transition: transform 0.4s;
+}
+.logpopup:not(.hidden) {
+    pointer-events: none;
+    transform: translate(-50%, -50%) scale(0.9);
+}
+.logpopup #list {
+    position: absolute;
+    top: 20px;
+    width: 100%;
+    height: calc(100% - 70px);
+    overflow-y: scroll;
+}
+.logpopup #list::-webkit-scrollbar {width: 3px;}
+.logpopup #list::-webkit-scrollbar-thumb {background-color: white;border-radius: 10px;}
+.logpopup #list .text {
+    display: inline-block;
+    text-align: center;
+    background-color: transparent;
+    border-bottom: solid 1px rgb(34, 34, 34);
+    width: 100%;
+    padding: 10px 0px;
+}
+.logpopup #list .text::before {
+    display: inline-block;
+    content: attr(data-time);
+    background-color: white;
+    color: black;
+    padding: 0px 5px;
+    margin-right: 5px;
+    border-radius: 5px;
+}
+
+.logpopup #close {
+    position: absolute;
+    display: inline-block;
+    left: 50%;
+    bottom: 10px;
+    font-size: 1em;
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: solid 2px white;
+    background-color: white;
+    color: black;
+    cursor: pointer;
+    user-select: none;
+    transform: translateX(-50%) scale(1);
+    transition: transform 0.4s;
+}
+.logpopup #close:hover {
+    animation: colorrchange 6s infinite;
+    background-color: black;
+    color: white;
+    transform: translateX(-50%) scale(1.1);
+}
+.logpopup #nothing {
+    position: absolute;
+    display: inline-block;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0.3;
+    user-select: none;
+}
+
+@keyframes colorrchange {
+    0% {
+        border: solid 2px rgb(97, 130, 237);
+    }
+    18% {
+        border: solid 2px rgb(203, 81, 59);
+    }
+    36% {
+        border: solid 2px rgb(234, 191, 63);
+    }
+    54% {
+        border: solid 2px rgb(97, 130, 237);
+    }
+    72% {
+        border: solid 2px rgb(101, 166, 93);
+    }
+    90% {
+        border: solid 2px rgb(203, 81, 59);
+    }
+    100% {
+        border: solid 2px rgb(97, 130, 237);
+    }
+}

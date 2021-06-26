@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Google</title>
+        <link rel="shortcut icon" href="https://google.com/favicon.ico" />
+        <link href="style.css" rel="stylesheet">
+        <link href="footer.css" rel="stylesheet">
+        <link href="log.css" rel="stylesheet">
+        <link href="content.css" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+        <script src="script.js"></script>
+        <script src="detect.js"></script>
+        <script src="logcheck.js"></script>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="og:title" content="Google">
+        <meta name="og:description" content="Search the world's information, including webpages, images, videos and more. Google has many special features to help you find exactly what you're looking for.">
+        <meta name="og:image" content="https://i.ibb.co/q74RnND/sdf.png">
+        <meta name="og:site_name" content="Don't Touch My PC!">
+        <meta name="description" content="Search the world's information, including webpages, images, videos and more. Google has many special features to help you find exactly what you're looking for.">
+    </head>
+    <body>
+        <div class="dialog">
+            <div class="popup">
+                <div id="wrap">
+                    <span id="title">Let's start!</span>
+                    <span id="description">If someone moves your mouse while hovering on this web browser, 'Gmail' on the top of the site will be changed to 'Email'.<br>You can move mouse within 10px from the start point.<br>It will also detect when mouse gets out of the browser.<br><br><span class="highlight">If you want to see the log of mouse movement, press '3' on the keyboard.</span></span>
+                    <span id="start">Start</span>
+                </div>
+            </div>
+        </div>
+        <div class="logdialog hidden">
+            <div class="logpopup">
+                <div id="list">
+                    <span id="nothing">Nothing here yet</span>
+                </div>
+                <span id="close">Close</span>
+            </div>
+        </div>
+        <span id="countdown">3</span>
+        <div class="content">
+            <div class="sec" id="account">
+                <div id="wrap">
+                    <div id="links">
+                        <a id="gmail">Gmail</a>
+                        <a>Images</a>
+                    </div>
+                    <div id="acc">
+                        <div id="menu">
+                            <div id="menuwrap">
+                                <svg width="24" height="24" focusable="false" viewBox="0 0 24 24" style="fill: currentColor;"><path d="M6,8c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM12,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM6,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM6,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM12,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM16,6c0,1.1 0.9,2 2,2s2,-0.9 2,-2 -0.9,-2 -2,-2 -2,0.9 -2,2zM12,8c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM18,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM18,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2z"></path></svg>
+                            </div>
+                        </div>
+                        <span id="login">Sign in</span>
+                    </div>
+                </div>
+            </div>
+            <div id="searchwrap">
+                <div class="sec" id="logo">
+                    <img src="assets/logo.svg">
+                </div>
+                <div class="sec" id="search">
+                    <div id="searchbar">
+                        <div id="wrap">
+                            <span id="searchicon"><svg focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" style="fill: currentColor;"><path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"></path></svg></span>
+                        </div>
+                        <input type="text" id="searchinput">
+                        <div id="wrap2">
+                            <span id="clearicon"><svg focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" style="fill: currentColor;"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path></svg></span>
+                        </div>
+                    </div>
+                    <div id="buttons">
+                        <span id="button">Google Search</span>
+                        <span id="button">I'm Feeling Lucky</span>
+                    </div>
+                </div>
+                <div class="sec" id="service">
+                    <span>Google offered in: <a>English</a></span>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div id="country"><span>United States</span></div>
+            <div id="links">
+                <div id="toprow">
+                    <a>About</a>
+                    <a>Advertising</a>
+                    <a>Business</a>
+                    <a>How Search works</a>
+                </div>
+                <div id="lowrow">
+                    <a>Privacy</a>
+                    <a>Terms</a>
+                    <a>Settings</a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
